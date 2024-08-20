@@ -1,0 +1,12 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media (min-width: 400px) {
+    .welcome-page {
+        flex-direction: row;
+    }
+}

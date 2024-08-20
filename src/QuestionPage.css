@@ -1,0 +1,5 @@
+.button-container {
+    max-width: none !important;
+    justify-content: center;
+    gap:20px;
+}
