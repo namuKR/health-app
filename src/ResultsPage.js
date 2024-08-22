@@ -304,9 +304,12 @@ function ResultsPage({ userData }) {
         }
     }
     useEffect(() => {
-        if (document.getElementById('inner-container').clientHeight >= window.innerHeight) {
-            document.getElementById('container').style.alignItems = 'unset';
+        try {
+            if (document.getElementById('inner-container').clientHeight >= window.innerHeight) {
+                document.getElementById('container').style.alignItems = 'unset';
+            }
         }
+        catch {}
     }, [])
 
     return (
@@ -316,7 +319,7 @@ function ResultsPage({ userData }) {
                 <br />
                 <CircularProgressBar {...scoreProps} />
                 <Typography sx={{ marginTop: 1 }} level="body-md">BMI: {status}</Typography><br />
-                <Button color="success" onClick={()=>{window.location.reload()}}>다시하기</Button>
+                <Button color="success" onClick={() => { window.location.reload() }}>다시하기</Button>
             </div>
             {score !== 100 &&
                 <div id="container" style={{ width: '100%', justifyContent: 'center', height: '100%', alignItems: 'center', display: 'flex' }}>
