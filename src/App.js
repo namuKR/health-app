@@ -57,7 +57,7 @@ function App() {
     }
   };
 
-  return <div className="App">{renderPage()}</div>;
+  return <><title>건강 상태 체크 앱</title><div className="App">{renderPage()}</div></>;
 }
 
 export default App;

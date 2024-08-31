@@ -8,7 +8,7 @@ function WelcomePage({ onStart }) {
             <div>
                 <Typography level="h1">가장 쉽고 간단한</Typography>
                 <Typography level="h1">건강 상태 진단 앱</Typography>
-                <p>1106 김승기 | 2학기 수학 수행평가</p>
+                <p>9/18일까지 접속 가능</p>
             </div>
             <div style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
                 <Button onClick={onStart} size='xl' color='success'>시작하기</Button>
